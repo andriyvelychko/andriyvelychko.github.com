@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Главная</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,600i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/iconmoon.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="header-wrap">
+				<div class="logo"><a href="#" class="logo__text">FLOWERS COM.</a></div>
+				<nav class="navigation">
+					<button class="menu-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<ul class="menu" id="menu">
+						<li class="menu__item">
+							<a href="#1" class="menu__link">Главная</a>
+						</li>
+						<li class="menu__item">
+							<a href="#price-list" class="menu__link">Цени</a>
+						</li>
+						<li class="menu__item">
+							<a href="#info" class="menu__link">О нас</a>
+						</li>
+						<li class="menu__item">
+							<a href="#contacts" class="menu__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="banner" id="1">
+		<div class="wrapper">
+			<div class="banner-content">
+				<h1>Доставка<br>цветов</h1>
+				<p>давайте порадуем наших близких</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="toTop"></div >
+
+	<div class="price-list" id="price-list">
+		<div class="wrapper">
+			<h2>Букеты</h2>
+			<div class="mobile-wrap">
+				<div class="price-list--wrap">
+					<div class="price-list--content">
+						<img src="img/price-list-bouquet/price-bouquet-1.jpg" alt="" class="price-list--hover">
+						<div class="price">500.00 Р.</div>
+						<div class="button js-button-campaign price-list--hover animated"><span>Купить</span></div>
+					</div>
+					<div class="price-list--content">
+						<img src="img/price-list-bouquet/price-bouquet-2.jpg" alt="">
+						<div class="price">500.00 Р.</div>
+						<div class="button js-button-campaign animated"><span>Купить</span></div>
+					</div>
+					<div class="price-list--content">
+						<img src="img/price-list-bouquet/price-bouquet-3.jpg" alt="">
+						<div class="price">500.00 Р.</div>
+						<div class="button js-button-campaign animated"><span>Купить</span></div>
+					</div>
+				</div>
+				<div class="price-list--wrap">
+				<div class="price-list--content">
+							<img src="img/price-list-bouquet/price-bouquet-4.jpg" alt="">
+						<div class="price">500.00 Р.</div>
+						<div class="button js-button-campaign animated"><span>Купить</span></div>
+					</div>
+					<div class="price-list--content">
+						<img src="img/price-list-bouquet/price-bouquet-5.jpg" alt="">
+						<div class="price">500.00 Р.</div>
+						<div class="button js-button-campaign animated"><span>Купить</span></div>
+					</div>
+					<div class="price-list--content">
+						<img src="img/price-list-bouquet/price-bouquet-6.jpg" alt="">
+						<div class="price">500.00 Р.</div>
+						<div class="button js-button-campaign animated"><span>Купить</span></div>
+					</div>
+				</div>
+			</div>
+			<!------------Modal window-------------->
+			<div class="overlay js-overlay-campaign">
+				<div class="popup js-popup-campaign">
+				<h2>Заполните форму</h2>
+					<form action="#">
+						<div class="form-fild">
+							<div>
+								<input required="required" type="text" class="form-control" placeholder="Имя*" maxlength="25">
+							</div>
+							<div>
+								<input required="required" type="number" class="form-control fc"placeholder="Телефон*" onkeypress="if(this.value.length&gt;12) return false;">
+							</div>
+							<div>
+								<input required="required" type="email" class="form-control" placeholder="Email*">
+							</div>
+						<input type="submit" value="Отправить" class="btn animated">
+					</div>
+					</form>
+				<div class="close-popup js-close-campaign"></div>
+			</div>
+		</div>
+
+		</div>
+	</div>
+	
+	<div class="info" id="info">
+		<div class="wrapper">
+			<h2>Почему выбрали нас</h2>
+			<div class="info-wrap">
+				<div class="info-content">
+					<img src="img/icons/Nature_&_outdoors_01.svg">
+					<p>Доставка от 500 бесплатно</p>
+				</div>
+				<div class="info-content">
+					<img src="img/icons/Nature_&_outdoors_02.svg">
+					<p>Только свежие цветы</p>
+				</div>
+				<div class="info-content">
+					<img src="img/icons/Nature_&_outdoors_03.svg">
+					<p>Лучшые дизайны букетов для вас</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="contacts" id="contacts">
+		<div class="wrapper">
+			<h2>Контакты</h2>
+			<div class="contacts-wrap-text">
+				<div>
+					<p>Москва:<br>
+					4-я Магистральная, 5<br>
+					+7 495 236-72-47</p>
+				</div>
+				<div>
+					<p>Санкт-Петербург:<br>
+					ул. Циолковского, 10<br>
+					+7 812 418-24-30</p>
+				</div>
+				<div>
+					<p>Казань:<br>
+					ул. Хади Такташа, 77<br>
+					+7 903 319-96-90</p>
+				</div>
+			</div>	
+			<div class="hr"></div>
+			<div class="contacts-wrap-icons">
+				<a href=""><span class="icon-instagram"></span></a>
+				<a href=""><span class="icon-facebook"></span></a>
+				<a href=""><span class="icon-whatsapp"></span></a>
+				<a href=""><span class="icon-telegram"></span></a>
+				<a href=""><span class="icon-vk"></span></a>
+				<a href=""><span class="icon-twitter"></span></a>
+			</div>
+		</div>
+	</div>
+
+	<section id="map"></section>
+	  
+	<footer>
+		<div class="wrapper">
+			<form action="#">
+				<div class="form-field">
+					<input required="required" type="email" class="form-control" placeholder="Введите email для обратной связи">
+				</div>
+					<input type="submit" value="Отправить" class="btn animated">
+			</form>
+			<div class="footer-wrap">
+				<p class="copyright">&copy;2020</p>
+				<p>Flowers is amazing.</p>
+			</div>
+		</div>
+		
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAGc9UDDp2TkzdhPh4bMakefxZLedPGJuM"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="js/wow.min.js"></script>
+        <script>        	
+			new WOW().init();
+        </script>
+</body>
+</html>
