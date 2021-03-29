@@ -6,13 +6,13 @@ $(function(){
 	})
 
 	$('.tabs a').click(function(){
-		$(this).parents('.tab-wrap').find('.tab-cont').addClass('hide');
-		$(this).parent().siblings().removeClass('active');
-		var id = $(this).attr('href');
-		$(id).removeClass('hide');
-		$(this).parent().addClass('active');
-		return false
-	});
+        $(this).parent().siblings().removeClass('active');
+        var id = $(this).attr('href');
+        $(id).removeClass('hide');
+        $(this).parent().addClass('active');
+        return false
+    	$(this).parents('.tab-wrap').find('.tab-cont').addClass('hide');
+        }); 
 });
 //---------------------------------------------------
 // Модальное окно
@@ -33,6 +33,25 @@ $(function(){
             $('.js-overlay-campaign').fadeOut();
         }
     });
+
+
+
+
+$(document).ready(function(){
+$("#setCookie").click(function () {
+$.cookie("popup", "", { expires:0, path: '/' });
+$("#bg_popup").hide();
+});
+ 
+if ( $.cookie("popup") == null )
+{
+setTimeout(function(){
+$("#bg_popup").show();
+}, 1000)
+}
+else { $("#bg_popup").hide();
+}
+});
 //--------------------------------------------------
 //Плавный скрол
     $(document).ready(function(){
